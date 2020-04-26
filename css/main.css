@@ -1,0 +1,501 @@
+body {
+    width: 1200px;
+    margin: 0 auto 40px auto;
+    display: block;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-family: verdana;
+    background-color: lightgray;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+header {
+    background-color: #95a5a6;
+    height: 54px;
+    width: 1200px;
+    font-size: 80%;
+    vertical-align: top;
+}
+
+.box {
+    width: 300px;
+    height: 54px;
+    background-color: green;
+    float: right;
+    display: block;
+    margin: auto;
+}
+
+.header-navigation {
+    background-color: #95a5a6;
+    float: left;
+    width: 1200px;
+    height: 63px;
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.section {
+    width: 1200px;
+    background-color: gray;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+    clear: both;
+    text-align: center;
+}
+
+/* Base */
+
+html {
+    font-family: "Ropa Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.no-boxshadow .page-header {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+/* Primary nav */
+
+.primary-nav {
+    float: right;
+    line-height: 65px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.primary-nav li {
+    float: left;
+}
+
+.primary-nav a {
+    display: block;
+    padding: 0 1.36em;
+}
+
+.primary-nav a:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+/*
+@media以外の所は全てのサイズで読み込まれます。
+*/
+
+p {
+    color: red;
+}
+
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    p {
+        color: #ededed;
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    p {}
+}
+
+@media screen and (min-width:1024px) {
+    /*　画面サイズが1024pxからはここを読み込む　*/
+}
+
+/*
+ * Topics section
+ */
+
+.topics-section {
+    position: relative;
+    z-index: 20;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.topics-section>.inner {
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 75px;
+    width: 960px;
+    background-color: grey;
+    width: 1200px;
+}
+
+.topics-section h2 {
+    display: none;
+}
+
+.topics-list li {
+    float: left;
+    margin-left: 24px;
+    width: 304px;
+}
+
+.topics-list li:first-child {
+    margin-left: 0;
+}
+
+.topics-list a {
+    display: block;
+}
+
+.topics-list .image-wrapper {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    position: relative;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.no-boxshadow .topics-list .image-wrapper {
+    border: 1px solid rgb(204, 204, 204);
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.about {
+    background-color: grey;
+}
+
+/* card */
+
+.topics-list .image-wrapper:before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 75%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.topics-list .title {
+    display: block;
+    font-size: 18px;
+    line-height: 1.34;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.topics-list .date {
+    color: rgb(128, 128, 128);
+    display: block;
+    font-size: 12px;
+    line-height: 1.34;
+    margin-bottom: 1.34em;
+}
+
+.topics-list .description {
+    color: rgb(77, 77, 77);
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+/*
+ * Work section
+ */
+
+.no-boxshadow .work-section .section-header {
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.work-section .section-header>.inner {
+    margin: auto;
+    width: 960px;
+    position: relative;
+}
+
+/* タブ */
+
+.textshadow .work-section .section-body .read-more {
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+/*
+ * Contact section
+ */
+
+.contact-section {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.contact-section>.inner {
+    height: 500px;
+    position: relative;
+    min-width: 960px;
+}
+
+.contact-section h2 {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-form-wrapper {
+    width: 352px;
+    padding: 56px 64px 0;
+    position: absolute;
+    left: 50%;
+}
+
+/* Contact form */
+
+.contact-form .form-item {
+    margin-top: 0.5em;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 1.75;
+    text-transform: uppercase;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid rgb(153, 153, 153);
+    font-size: 14px;
+    padding: 0.25em;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    line-height: 1;
+    width: 200px;
+}
+
+.contact-form textarea {
+    line-height: 1.25;
+    width: 340px;
+    height: 160px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(128, 128, 128);
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    margin-top: 0.75em;
+    padding: 0.375em 0;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*
+ * Footer
+ */
+
+.page-footer>.inner {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 960px;
+}
+
+/* Social links */
+
+/* Copyright */
+
+.copyright {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    padding: 6px 0;
+    float: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.no-js .back-to-top {
+    display: none;
+}
+
+/* Style the navbar */
+
+#navbar {
+    overflow: hidden;
+    background-color: #95a5a6;
+}
+
+/* Navbar links */
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* Page content */
+
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Slideshow container */
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.center {
+    margin: 0 0 50px;
+    justify-content: center;
+}
+
+.center img {
+    width: 100%;
+    height: auto;
+}
+
+.center .slick-next {
+    right: 20px;
+    z-index: 99;
+}
+
+.center .slick-prev {
+    left: 15px;
+    z-index: 100;
+}
+
+.work-section {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+
+.about_section {
+    background-color: grey;
+}
+
+.main-section {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/img_slide.jpg);
+    background-size: cover;
+    background-color: #95a5a6;
+}
+
+.detailsp-section {
+    text-align: center;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+
+.work-section {
+    text-align: center;
+}
+
+.container {
+    justify-content: center;
+}
